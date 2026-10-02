@@ -18,7 +18,7 @@ export default function AppRoutes() {
             <Stack.Screen
                 name="SignUp"
                 component={SignUpScreen}
-                options={{ headerShown: false }}
+                options={{ title: "Cadastro" }}
             />
             <Stack.Screen
                 name="Home"
