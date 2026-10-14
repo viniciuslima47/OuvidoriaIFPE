@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { StatusBar } from 'expo-status-bar';
 import {
     ScrollView,
@@ -7,20 +8,37 @@ import {
     View,
 } from 'react-native';
 
+=======
+import React from 'react';
+import {
+    StyleSheet,
+    Text,
+    View,
+    ScrollView,
+    TouchableOpacity,
+} from 'react-native';
+import { StatusBar } from 'expo-status-bar';
+>>>>>>> b04943666113c4c058dbd624989d05cff5ca6da5
 
 export default function HomeScreen() {
     return (
         <View style={styles.homeContainer}>
             <StatusBar style="light" />
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> b04943666113c4c058dbd624989d05cff5ca6da5
             {/* CABEÇALHO */}
             <View style={styles.headerHome}>
                 <Text style={styles.headerTitulo}>Página Inicial</Text>
                 <Text style={styles.headerSubtitulo}>Aluno</Text>
             </View>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> b04943666113c4c058dbd624989d05cff5ca6da5
             {/* CONTEÚDO */}
             <ScrollView
                 style={styles.homeScroll}
@@ -28,6 +46,7 @@ export default function HomeScreen() {
                 showsVerticalScrollIndicator={false}
             >
                 <View style={styles.tituloLinha}>
+<<<<<<< HEAD
                     <Text style={styles.minhasManifestacoes}>manifestações</Text>
                             <TouchableOpacity style={styles.botaoNova}>
                         <Text style={styles.botaoNovaTexto}>＋ Nova Manifestação</Text>
@@ -35,6 +54,14 @@ export default function HomeScreen() {
                 </View>
 
 
+=======
+                    <Text style={styles.minhasManifestacoes}>Minhas manifestações</Text>
+                    <TouchableOpacity style={styles.botaoNova}>
+                        <Text style={styles.botaoNovaTexto}>＋ Nova</Text>
+                    </TouchableOpacity>
+                </View>
+
+>>>>>>> b04943666113c4c058dbd624989d05cff5ca6da5
                 {/* MANIFESTAÇÃO 1 */}
                 <View style={styles.card}>
                     <View style={styles.cardTopo}>
@@ -52,7 +79,10 @@ export default function HomeScreen() {
                     </View>
                 </View>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> b04943666113c4c058dbd624989d05cff5ca6da5
                 {/* MANIFESTAÇÃO 2 */}
                 <View style={styles.card}>
                     <View style={styles.cardTopo}>
@@ -70,7 +100,10 @@ export default function HomeScreen() {
                     </View>
                 </View>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> b04943666113c4c058dbd624989d05cff5ca6da5
                 {/* MANIFESTAÇÃO 3 */}
                 <View style={styles.card}>
                     <View style={styles.cardTopo}>
@@ -87,14 +120,20 @@ export default function HomeScreen() {
                         <Text style={styles.protocolo}>OUV-2026-001236</Text>
                     </View>
                 </View>
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> b04943666113c4c058dbd624989d05cff5ca6da5
             </ScrollView>
         </View>
     );
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> b04943666113c4c058dbd624989d05cff5ca6da5
 const styles = StyleSheet.create({
     homeContainer: {
         flex: 1,
@@ -132,7 +171,10 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'center',
         marginBottom: 24,
+<<<<<<< HEAD
         width: '100%',
+=======
+>>>>>>> b04943666113c4c058dbd624989d05cff5ca6da5
     },
     minhasManifestacoes: {
         fontSize: 20,
@@ -141,15 +183,23 @@ const styles = StyleSheet.create({
     },
     botaoNova: {
         backgroundColor: '#20B77A',
+<<<<<<< HEAD
         paddingHorizontal: 12,
         paddingVertical: 15,
+=======
+        paddingHorizontal: 18,
+        paddingVertical: 14,
+>>>>>>> b04943666113c4c058dbd624989d05cff5ca6da5
         borderRadius: 16,
     },
     botaoNovaTexto: {
         color: '#fff',
         fontSize: 16,
         fontWeight: 'bold',
+<<<<<<< HEAD
         textAlign: 'center'
+=======
+>>>>>>> b04943666113c4c058dbd624989d05cff5ca6da5
     },
     card: {
         backgroundColor: '#fff',
@@ -230,5 +280,9 @@ const styles = StyleSheet.create({
         color: '#00A651',
         fontSize: 13,
     },
+<<<<<<< HEAD
 });
 
+=======
+});
+>>>>>>> b04943666113c4c058dbd624989d05cff5ca6da5

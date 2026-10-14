@@ -1,21 +1,20 @@
-import { Ionicons } from '@expo/vector-icons';
-import { StatusBar } from 'expo-status-bar';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import {
-    ScrollView,
     StyleSheet,
     Text,
-    TextInput,
-    TouchableOpacity,
     View,
+    ScrollView,
+    TouchableOpacity,
+    TextInput,
 } from 'react-native';
-import { Snackbar } from 'react-native-paper';
-import { useUsersDatabase } from '../database/useUsersDatabase';
+import { StatusBar } from 'expo-status-bar';
+import { Ionicons } from '@expo/vector-icons';
+import { Snackbar, SegmentedButtons } from 'react-native-paper'
 
 export default function SignUpScreen({ navigation }) {
-    const [id, setId] = useState('');
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
+    const [level, setLevel] = useState('Aluno');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
 
@@ -145,6 +144,22 @@ export default function SignUpScreen({ navigation }) {
                             />
                         </View>
                         {errors.email && <Text style={styles.errorText}>Insira um e-mail válido.</Text>}
+
+                        <SegmentedButtons
+                            value={level}
+                            onValueChange={setLevel}
+                            style={{ marginTop: 12 }}
+                            buttons={[
+                                {
+                                    value: 'aluno',
+                                    label: 'Aluno',
+                                },
+                                {
+                                    value: 'colaborador',
+                                    label: 'Colaborador',
+                                },
+                            ]}
+                        />
 
                         {/* Senha */}
                         <Text style={styles.label}>Senha</Text>

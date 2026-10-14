@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { SQLiteProvider } from 'expo-sqlite';
 
@@ -8,11 +9,20 @@ import ConfigScreen from '../screens/ConfigScreen';
 import LoginScreen from '../screens/LoginScreen';
 import SignUpScreen from '../screens/SignUpScreen';
 import UserEditScreen from '../screens/UserEditScreen';
+=======
+import React from 'react';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+import LoginScreen from '../screens/LoginScreen';
+import SignUpScreen from '../screens/SignUpScreen';
+import NavigationBar from '../navigation/NavigationBar';
+>>>>>>> b04943666113c4c058dbd624989d05cff5ca6da5
 
 const Stack = createNativeStackNavigator();
 
 export default function AppRoutes() {
     return (
+<<<<<<< HEAD
         <SQLiteProvider
             databaseName="myDatabase.db"
             onInit={initializeDataBase}
@@ -64,3 +74,24 @@ export default function AppRoutes() {
         </SQLiteProvider>
     );
 }
+=======
+        <Stack.Navigator initialRouteName="Login">
+            <Stack.Screen
+                name="Login"
+                component={LoginScreen}
+                options={{ headerShown: false }}
+            />
+            <Stack.Screen
+                name="SignUp"
+                component={SignUpScreen}
+                options={{ title: "Cadastro" }}
+            />
+            <Stack.Screen
+                name="Home"
+                component={NavigationBar}
+                options={{ headerShown: false }}
+            />
+        </Stack.Navigator>
+    );
+}
+>>>>>>> b04943666113c4c058dbd624989d05cff5ca6da5
