@@ -1,15 +1,9 @@
-<<<<<<< HEAD
-import { Ionicons } from '@expo/vector-icons';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-
-import ConfigScreen from '../screens/ConfigScreen';
-=======
 import React from 'react';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
->>>>>>> b04943666113c4c058dbd624989d05cff5ca6da5
 import HomeScreen from '../screens/HomeScreen';
+import ConfigScreen from '../screens/ConfigScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -20,11 +14,7 @@ const Icons = {
     Ajustes: 'settings-outline',
 };
 
-<<<<<<< HEAD
 export default function NavigationBar({ usuario }) {
-=======
-export default function NavigationBar() {
->>>>>>> b04943666113c4c058dbd624989d05cff5ca6da5
     return (
         <Tab.Navigator
             screenOptions={({ route }) => ({
@@ -35,11 +25,7 @@ export default function NavigationBar() {
                     backgroundColor: '#ffffff',
                     borderTopColor: '#E2E8F0',
                     paddingTop: 8,
-<<<<<<< HEAD
                     height: 75, // Altura suficiente para acomodar ícone e texto
-=======
-                    height: 68, // Altura suficiente para acomodar ícone e texto
->>>>>>> b04943666113c4c058dbd624989d05cff5ca6da5
                 },
                 tabBarItemStyle: {
                     paddingBottom: 4,
@@ -58,7 +44,6 @@ export default function NavigationBar() {
             <Tab.Screen name="Inicio" component={HomeScreen} options={{ title: 'Início' }} />
             <Tab.Screen name="Reclamacoes" component={HomeScreen} options={{ title: 'Reclamações' }} />
             <Tab.Screen name="Notificacoes" component={HomeScreen} options={{ title: 'Notificações' }} />
-<<<<<<< HEAD
             <Tab.Screen name="Ajustes" options={{ title: 'Ajustes' }}>
                 {(props) => (
                     <ConfigScreen
@@ -67,9 +52,6 @@ export default function NavigationBar() {
                     />
                 )}
             </Tab.Screen>
-=======
-            <Tab.Screen name="Ajustes" component={HomeScreen} options={{ title: 'Ajustes' }} />
->>>>>>> b04943666113c4c058dbd624989d05cff5ca6da5
         </Tab.Navigator>
     );
 }
