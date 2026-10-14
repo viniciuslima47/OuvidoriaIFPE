@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { Ionicons } from '@expo/vector-icons';
 import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
@@ -10,7 +9,6 @@ import {
     TouchableOpacity,
     View,
 } from 'react-native';
-=======
 import React, { useState } from 'react';
 import {
     StyleSheet,
@@ -22,16 +20,12 @@ import {
 } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { Ionicons } from '@expo/vector-icons';
->>>>>>> b04943666113c4c058dbd624989d05cff5ca6da5
 import { Snackbar } from 'react-native-paper';
 
 export default function LoginScreen({ navigation }) {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-<<<<<<< HEAD
     const [usuario] = useState('');
-=======
->>>>>>> b04943666113c4c058dbd624989d05cff5ca6da5
 
     const [showPassword, setShowPassword] = useState(false);
     const [focusedField, setFocusedField] = useState(null);
@@ -72,17 +66,14 @@ export default function LoginScreen({ navigation }) {
         setErrors({ email: false, password: false });
         setShowSnack(false);
 
-<<<<<<< HEAD
         const usuario = {
             nome: email.split('@')[0],
             email: email.trim(),
         };
 
         navigation.replace('Home', { usuario });
-=======
         console.log({ email, password });
         navigation.replace('Home');
->>>>>>> b04943666113c4c058dbd624989d05cff5ca6da5
     }
 
     return (
@@ -218,11 +209,8 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         alignItems: 'center',
         paddingHorizontal: 25,
-<<<<<<< HEAD
         paddingTop: 70,
-=======
         paddingTop: 40,
->>>>>>> b04943666113c4c058dbd624989d05cff5ca6da5
         paddingBottom: 20,
     },
     loginIconContainer: {
@@ -278,11 +266,8 @@ const styles = StyleSheet.create({
         color: '#222',
         fontSize: 16,
         height: '100%',
-<<<<<<< HEAD
         outlineStyle: 'none',
-=======
         outlineStyle: 'none', 
->>>>>>> b04943666113c4c058dbd624989d05cff5ca6da5
     },
     iconLeft: {
         marginRight: 10,
