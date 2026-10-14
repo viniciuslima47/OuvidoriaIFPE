@@ -4,11 +4,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { PaperProvider, MD3LightTheme } from 'react-native-paper';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import AppRoutes from './src/routes/AppRoutes';
-<<<<<<< HEAD
 import { createStore } from "tinybase";
-
-=======
->>>>>>> b04943666113c4c058dbd624989d05cff5ca6da5
 
 const theme = {
   ...MD3LightTheme,
