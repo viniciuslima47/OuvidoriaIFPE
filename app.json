@@ -2,7 +2,6 @@
   "expo": {
     "name": "ouvidoriaIFPE",
     "slug": "ouvidoriaIFPE",
-<<<<<<< HEAD
     "version": "1.0.0",
     "extra": {
       "eas": {
@@ -14,8 +13,6 @@
       "expo-font",
       "expo-sqlite"
     ]
-=======
     "version": "1.0.0"
->>>>>>> b04943666113c4c058dbd624989d05cff5ca6da5
   }
 }
